@@ -1,0 +1,49 @@
+{
+  "name": "rxmq",
+  "version": "0.9.3",
+  "description": "JavaScript pub/sub library based on RxJS",
+  "main": "es5/component.js",
+  "es6": "index.js",
+  "scripts": {
+    "cover": "babel-node ./node_modules/istanbul/lib/cli cover ./node_modules/tape/bin/tape ./test",
+    "build": "NODE_ENV=production rollup -c",
+    "test": "babel-node ./node_modules/tape/bin/tape ./test | tap-dot",
+    "docs": "esdoc -c esdoc.json",
+    "prepublish": "npm run build"
+  },
+  "contributors": [
+    "Tim Ermilov <yamalight@gmail.com> (http://codezen.net)",
+    "Denis Kuchelev (https://github.com/kuchelev)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rxmqjs/rxmq.js"
+  },
+  "babel": {
+    "env": {
+      "production": {
+        "presets": ["es2015-rollup"]
+      },
+      "development": {
+        "presets": ["es2015"]
+      }
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "rx": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.8.0",
+    "babel-core": "^6.8.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "babelrc-rollup": "^3.0.0",
+    "esdoc": "^0.4.7",
+    "istanbul": "^1.1.0-alpha.1",
+    "rollup": "^0.36.3",
+    "rollup-plugin-babel": "^2.6.1",
+    "tap-dot": "^1.0.5",
+    "tape": "^4.5.1"
+  }
+}

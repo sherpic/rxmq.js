@@ -1,0 +1,36 @@
+{
+  "coverage": "90%",
+  "expectCount": 20,
+  "actualCount": 18,
+  "files": {
+    "src/channel.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "src/rx/endlessReplaySubject.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        27
+      ]
+    },
+    "src/rx/endlessSubject.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        27
+      ]
+    },
+    "src/rxmq.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/utils/findTopicByName.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    }
+  }
+}
